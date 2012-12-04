@@ -57,6 +57,7 @@ case $action in
         ;;
     play|pause)
         \cp $backupfile $hostfile
+        \rm $blacklistedhostfile
         ;;
     *) 
         { 
